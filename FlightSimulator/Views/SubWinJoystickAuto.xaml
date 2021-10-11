@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="FlightSimulator.Views.SubWinJoystickAuto"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FlightSimulator.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" Width="441.842">
+    <Grid Margin="0,0,0.333,0">
+        <TextBox x:Name="CommandsBox" HorizontalAlignment="Left" Height="317" Margin="10,10,0,0" TextWrapping="Wrap" Background="{Binding ColorBackgruond, UpdateSourceTrigger=PropertyChanged}"
+                 Text="{Binding SimulatorCommands, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="425"/>
+        <Button Content="OK" Command="{Binding OKCommand}" HorizontalAlignment="Left" Height="77" Margin="15,332,0,0" VerticalAlignment="Top"
+                BorderBrush="Gold" FontWeight="UltraBold" Background="DarkBlue" Foreground="Gold" FontFamily="Elephant" FontStyle="Oblique" FontSize="30" Width="206"/>
+        <Button Content="Clear" Command="{Binding ClearCommand}" HorizontalAlignment="Left" Height="77" Margin="226,332,0,0" VerticalAlignment="Top"
+                BorderBrush="Gold" FontWeight="UltraBold" Background="DarkBlue" Foreground="Gold" FontFamily="Elephant" FontStyle="Oblique" FontSize="30" Width="209"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="FlightSimulator.Views.SubWinBoard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FlightSimulator.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="400">
+    <Grid>
+        <Button Content="Connect" Command="{Binding ConnectBTNCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170" FontWeight="UltraBold"
+                BorderBrush="Gold" Background="DarkBlue" Foreground="Gold" FontFamily="Elephant" FontStyle="Oblique" FontSize="30" Margin="46,10,0,0" Height="53"/>
+        <Button Content="Settings" Command="{Binding SettingsBTNCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" Margin="225,10,0,0" 
+                BorderBrush="Gold" Background="DarkBlue" Foreground="Gold" FontFamily="Elephant" FontStyle="Oblique" FontWeight="UltraBold" FontSize="30" Height="53"/>
+        <local:FlightBoard x:Name="flightBoard" Margin="10,68,10,0"  />
+
+    </Grid>
+</UserControl>

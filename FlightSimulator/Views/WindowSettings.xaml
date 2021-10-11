@@ -1,0 +1,38 @@
+﻿<Window x:Class="FlightSimulator.Views.WindowSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlightSimulator.Views"
+        mc:Ignorable="d"
+        Title="WindowSettings" Height="282.43" Width="366" ResizeMode="NoResize">
+    <Grid Margin="0,0,0.333,-1.667">
+        <Grid.Background>
+            <LinearGradientBrush>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.00"  Color="Black" />
+                    <GradientStop Offset="0.60" Color="Red" />
+                    <GradientStop Offset="1.00" Color="OrangeRed" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </Grid.Background>
+      
+        <TextBox x:Name="serverIPTxt" HorizontalAlignment="Left" Height="34" Margin="184,21,0,0" TextWrapping="Wrap" Text="{Binding  FlightServerIP}"
+            BorderBrush="Gray" FontFamily="Elephant" FontStyle="Oblique" FontSize="13" VerticalAlignment="Top" Width="159"/>
+        <TextBox x:Name="infoPortTxt" HorizontalAlignment="Left" Height="34" Margin="184,76,0,0" TextWrapping="Wrap" Text="{Binding  FlightCommandPort}"
+            BorderBrush="Gray" FontFamily="Elephant" FontStyle="Oblique" FontSize="13" VerticalAlignment="Top" Width="159"/>
+        <TextBox x:Name="portCommandTxt" HorizontalAlignment="Left" Height="34" Margin="184,130,0,0" TextWrapping="Wrap" Text="{Binding  FlightInfoPort}"
+            BorderBrush="Gray" FontFamily="Elephant" FontStyle="Oblique" FontSize="13" VerticalAlignment="Top" Width="159"/>
+        <Button x:Name="btnOK" Content="OK" Command="{Binding OkCommand}" HorizontalAlignment="Left" Height="53" Margin="10,181,0,0" VerticalAlignment="Top"
+                BorderBrush="Gold" FontWeight="UltraBold" Background="DarkBlue" Foreground="Gold" FontFamily="Elephant" FontStyle="Oblique" FontSize="30" Width="159"/>
+        <Button x:Name="btnCancel" Content="Cancel"  Command="{Binding CancelCommand}" HorizontalAlignment="Left" Height="53" Margin="184,181,0,0" VerticalAlignment="Top"
+               BorderBrush="Gold" FontWeight="UltraBold" Background="DarkBlue" Foreground="Gold" FontFamily="Elephant" FontStyle="Oblique" FontSize="30" Width="159"/>
+        <Label Content="Flight Server IP:" HorizontalAlignment="Left" Height="34" Margin="10,21,0,0" VerticalAlignment="Top"
+               Foreground="Gold" FontFamily="Elephant" FontStyle="Oblique" FontSize="13" Width="159"/>
+        <Label Content="Flight Info Port:" HorizontalAlignment="Left" Height="34" Margin="10,76,0,0" VerticalAlignment="Top"
+            Foreground="Gold" FontFamily="Elephant" FontStyle="Oblique" FontSize="13" Width="159"/>
+        <Label Content="Flight Command Port:" HorizontalAlignment="Left" Height="34" Margin="10,130,0,0" VerticalAlignment="Top"
+            Foreground="Gold" FontFamily="Elephant" FontStyle="Oblique" FontSize="13" Width="159"/>
+
+    </Grid>
+</Window>
