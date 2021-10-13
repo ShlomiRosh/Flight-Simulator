@@ -4,3 +4,6 @@ An application that can connect to a flight simulator. The application can recei
 #### It was developed using WPF C# programming language and the MVC design pattern
 
 **Snapshots**
+![](images/1.png)
+![](images/2.png)
+![](images/3.png)
